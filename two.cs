@@ -24,9 +24,7 @@
             double a = left + i * h;
             double b = left + (i + 1) * h;
             
-            if (Math.Sign(a) != Math.Sign(b)) {
-                checkDerivative(func, a, b, ++depth);
-            }
+            checkDerivative(func, a, b, ++depth);
         }
     }
    
